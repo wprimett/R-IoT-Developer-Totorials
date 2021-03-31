@@ -1,6 +1,6 @@
 # Table of contents
 
-* [BITalino R-IoT](README.md)
+* [BITalino R-IoT Developer Tutorials](README.md)
 
 ## R-IoT
 
