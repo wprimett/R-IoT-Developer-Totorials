@@ -7,7 +7,7 @@ The R-IoT's WiFi capabilities make it possible to stream data from many modules 
 In our tests we use the following:
 
 * BITalino R-IoTs - [https://plux.info/kits/376-bitalino-r-iot-810121007.html](https://plux.info/kits/376-bitalino-r-iot-810121007.html)
-* TP-Link MR3020 WiFi router - [https://plux.info/accessories/403-wireless-route-bitalino-riot-810121713.html](https://plux.info/accessories/403-wireless-route-bitalino-riot-810121713.html) 
+* TP-Link MR3020 WiFi router - [https://plux.info/accessories/403-wireless-route-bitalino-riot-810121713.html](https://plux.info/accessories/403-wireless-route-bitalino-riot-810121713.html)
 
 ## Assigning Device IDs Using the Configuration Page
 
@@ -15,7 +15,7 @@ Step one, turn on the R-IoT whilst holding down the on-board **mode** button. Th
 
 A new Wi-Fi network named **RIOT-\[4 random characters\]** will become available
 
-![](.gitbook/assets/screen_shot_2018-11-05_at_11.15.37_am.png)
+![](../.gitbook/assets/screen_shot_2018-11-05_at_11.15.37_am.png)
 
 _For more information, see the_ [_Quick-start Guide_](https://bitalino.com/downloads/quickstart-guide-riot-1.0.0.12-print.pdf)
 
@@ -23,13 +23,13 @@ Connect to this network and go to the following address from your browser: `192.
 
 From here, you can set the **ID** accordingly. We suggest setting the first device ID to 0 and increasing consecutively for each device \(second device is set to 1, next is 2, etc...\)
 
-![Configuration of two R-IoT devices](.gitbook/assets/riot_id_both%20%281%29.png)
+![Configuration of two R-IoT devices](../.gitbook/assets/riot_id_both%20%281%29.png)
 
 In order to access data from all devices simultaneously, all devices must be paired to the same network SSID and sending to the same **IP** and **PORT** \(_192.168.1.100_ and _8888_ by default\)
 
 Other parameters that must be set for each module: **WIFI MODE:** station, **IP TYPE:** DHCP
 
-## Accessing Device Data 
+## Accessing Device Data
 
 OSC messages from the R-IoT consists of an OSC Address Pattern followed by an OSC Type Tag String followed by and array of 22 values. Each device will send data with a unique message address defined by the module ID set in the previous step. For example, to filter message that are coming from device 0, we listen for the address **/0/raw.**
 
@@ -52,11 +52,11 @@ if __name__ == "__main__":
     parser.add_argument("--port",
         type=int, default=8888, help="The port to listen on")
     args = parser.parse_args()
-            
+
     ## Use wildcard argument in OSC listener        
     dispatcher = dispatcher.Dispatcher()
     dispatcher.map("/*/raw", riot_handler)
-                
+
     server = osc_server.ThreadingOSCUDPServer((args.ip, args.port), dispatcher)
     print("Serving on {}".format(server.server_address))
     server.serve_forever()
@@ -79,9 +79,4 @@ For a setup that requires more than 4 devices, there are two options available:
 1. Follow the instructions [here](https://forum.bitalino.com/viewtopic.php?f=1&t=511) to merge incoming data from two routers
 2. Lower the sampling rate from the configuration page, for example, to 10ms
 
-![](.gitbook/assets/lower_sampling_rate.png)
-
-
-
-
-
+![](../.gitbook/assets/lower_sampling_rate.png)
