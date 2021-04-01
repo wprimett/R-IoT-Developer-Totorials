@@ -1,6 +1,6 @@
 # Use the R-IoT with your home router
 
-### I already have a wireless router, can I use this with the R-IoT?
+## I already have a wireless router, can I use this with the R-IoT?
 
 Out of the box, the BITalino R-IoT module is set up to work with our pre-configured routers, which can be found in the [PLUX online store](https://store.plux.info/accessories/403-wireless-route-bitalino-riot-810121713.html). This is intended to provide a straightforward connection process with minimal interference.
 
@@ -8,7 +8,7 @@ Nonetheless, if you would prefer to use your own wireless router, you can do so 
 
 If this is your first time connecting the R-IoT, we recommend setting up a direct connection using the built-in Access Point mode using the [following guide](https://gitlab.com/weselle/riot-serverbit/issues/3). This goes over the fundamental steps for accessing the on-board configuration and should help you get more comfortable with receiving the sensor data from your computer.
 
-### **Accessing the R-IoT Configuration**
+## **Accessing the R-IoT Configuration**
 
 Step one, turn on the R-IoT whilst holding down the on-board **mode** button. The LED should flash rapidly then become static 🔵
 
@@ -22,7 +22,7 @@ _For more information, see the_ [_Quick-start Guide_](https://bitalino.com/downl
 
 Connect to the new WiFi network and go to the following address from your browser: `192.168.1.1`💻
 
-### Changing and Saving the Configuration
+## Changing and Saving the Configuration
 
 After following the steps above, you should see the following page:
 
@@ -51,7 +51,7 @@ Review the configuration form and click `Submit` to save changes
 
 Restart the device in default mode by flipping the on/off switch.
 
-### **Testing The Connection with OpenSignals**
+## **Testing The Connection with OpenSignals**
 
 Upon restart, your machine will be automatically disconnected from the RIOT-XXXX network. Connect to your router and change your IPv4 address accordingly. You'll need to change the IPv4 address of your computer to match the destination address of the R-IoT \([more info](https://gitlab.com/weselle/riot-serverbit/issues/3#change-computer-ip-manually)\).
 
@@ -59,17 +59,9 @@ From there follow the instructions in [this guide ](https://bitalino.com/downloa
 
 ![BITalino R-IoT Quick Start Guide](../.gitbook/assets/quickstart-guide-riot-1.0.0.12-print.png)
 
-**Direct Data Transmission - OSC** 
+**Direct Data Transmission - OSC**
 
 Find a list of code templates in our examples repository: [https://github.com/wprimett/bitalino\_riot\_templates](https://github.com/wprimett/bitalino_riot_templates)
 
-![](../.gitbook/assets/osc_ex.png)
-
-
-
-
-
-
-
-
+![](../.gitbook/assets/osc_ex%20%281%29.png)
 
