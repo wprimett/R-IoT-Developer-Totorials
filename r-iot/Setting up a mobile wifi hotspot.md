@@ -25,7 +25,7 @@ sudo ifconfig en0 192.168.1.100 netmask 255.255.255.0
 
 Use this Processing sketch to monitor inputs directly:
 
-[oscdataplotter.zip](../.gitbook/assets/oscdataplotter.zip)
+[oscdataplotter.zip](https://github.com/wprimett/R-IoT-Developer-Totorials/raw/main/.gitbook/assets/oscdataplotter.zip)
 
 #### ServerBIT/Websockets Test
 
