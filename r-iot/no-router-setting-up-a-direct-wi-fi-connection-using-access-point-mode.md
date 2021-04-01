@@ -18,7 +18,7 @@ Step one, turn on the R-IoT whilst holding down the on-board **mode** button. Th
 
 A new Wi-Fi network named **RIOT-\[4 random characters\]** will become available
 
-![](../.gitbook/assets/screen_shot_2018-11-05_at_11.15.37_am%20%281%29.png)
+![](../.gitbook/assets/screen_shot_2018-11-05_at_11.15.37_am%20%282%29.png)
 
 _For more information, see the_ [_Quick-start Guide_](https://bitalino.com/downloads/quickstart-guide-riot-1.0.0.12-print.pdf)
 

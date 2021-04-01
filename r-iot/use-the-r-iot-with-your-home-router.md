@@ -63,5 +63,5 @@ From there follow the instructions in [this guide ](https://bitalino.com/downloa
 
 Find a list of code templates in our examples repository: [https://github.com/wprimett/bitalino\_riot\_templates](https://github.com/wprimett/bitalino_riot_templates)
 
-![](../.gitbook/assets/osc_ex%20%281%29.png)
+![](../.gitbook/assets/osc_ex%20%282%29.png)
 
